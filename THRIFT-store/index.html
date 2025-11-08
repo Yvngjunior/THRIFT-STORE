@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<!--css file--->
+<link rel="stylesheet" href="thrift.css">
+<!--font awesome icons--->
+<script src="https://kit.fontawesome.com/32b504d15d.js" crossorigin="anonymous"></script>
+<title>Thrift Royalty — Home</title>
+</head>
+<body>
+  <section class="hero-wrapper">
+<header>
+  <nav class="nav-links">
+
+    <a href="#home" class="nav-item">
+      Home
+      <img src="hoome.png" class="hover-icon home" alt="home">
+    </a>
+
+    <a href="#services" class="nav-item services">
+      Services
+      <img src="shopping.png" class="hover-icon bag" alt="shopping">
+    </a>
+
+    <a href="#contact" class="nav-item contact">
+      Contact
+      <img src="phone-call.jpg" class="hover-icon phone" alt="phone-call">
+    </a>
+
+  </nav>
+</header>
+
+ <!-- <header>
+  <div class="brand">THRIFT ROYALTY</div>
+  <nav>
+    <a href="#services" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">SHOP</a>
+    <a href="#contact" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">CONTACT</a>
+  </nav>
+</header> -->
+
+<main class="hero" role="main" aria-labelledby="main-title">
+  <div class="hero-title">
+    <h1 id="main-title">WELCOME</h1>
+    <p id="sty">Style lives here — curated thrift for every size and story</p>
+  </div>
+
+  <!-- Showroom: 3 mannequin panels (woman | man | kid) -->
+  <div class="showroom" aria-live="polite">
+
+    <!-- WOMAN panel -->
+    <section class="panel" aria-label="Women styles">
+      <div class="scene" id="scene-woman" style="background:linear-gradient(180deg,#f7efe9,#efe6dc)"></div>
+      <div class="panel-content">
+        <div class="mannequin-wrap">
+          <img id="mannequin-woman" class="mannequin spin-back" src="THEWOMAN.png" alt="Woman mannequin in dress">
+        </div>
+        <div class="caption">
+          <h3>Women — Curated Dresses</h3>
+          <p class="muted-small">Boutique interior display • varied sizes & skin tones</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAN panel -->
+    <section class="panel" aria-label="Men styles">
+      <div class="scene" id="scene-man" style="background:linear-gradient(180deg,#f2f3f4,#e9e9e9)"></div>
+      <div class="panel-content">
+        <div class="mannequin-wrap">
+          <img id="mannequin-man" class="mannequin spin-back" src="THEMAN.png" alt="Man mannequin in cap and casual outfit">
+        </div>
+        <div class="caption">
+          <h3>Men — Casual & Street</h3>
+          <p class="muted-small">Simple studio background • caps and sneakers included</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KID panel -->
+    <section class="panel" aria-label="Kids styles">
+      <div class="scene" id="scene-kid" style="background:linear-gradient(180deg,#efe6df,#efe1d8)"></div>
+      <div class="panel-content">
+        <div class="mannequin-wrap">
+          <img id="mannequin-kid" class="mannequin spin-back" src="THEBOY.png">
+        </div>
+        <div class="caption">
+          <h3>Kids — Urban Cute</h3>
+          <p class="muted-small">Street scenes • tiny sneakers • cap sometimes</p>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- .showroom -->
+  </section>
+  <div class="cta">
+    <button class="btn" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">BROWSE THE <strong>COLLECTION</strong></button>
+  </div>
+
+  <!-- Services placeholder below hero to match single-page request -->
+  <section id="services" style="max-width:1080px;margin:40px auto 0;padding:10px 20px;">
+    <h2 style="margin:0 0 12px 0">Categories</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
+
+  <!-- Women -->
+  <div class="cat-card-rotator">
+    <div class="cat-img-frame">
+      <img class="cat-img" data-category="women" src="women1.jpg" />
+    </div>
+    <strong>Women</strong>
+    <div class="muted-small">Dresses, tops, jackets, shoes</div>
+  </div>
+
+  <!-- Men -->
+  <div class="cat-card-rotator">
+    <div class="cat-img-frame">
+      <img class="cat-img" data-category="men" src="men1.jpg" />
+    </div>
+    <strong>Men</strong>
+    <div class="muted-small">Streetwear, caps, sneakers</div>
+  </div>
+
+  <!-- Kids -->
+  <div class="cat-card-rotator">
+    <div class="cat-img-frame">
+      <img class="cat-img" data-category="kids" src="kids1.jpg" />
+    </div>
+    <strong>Kids</strong>
+    <div class="muted-small">Cute sets, tiny shoes, playful</div>
+  </div> 
+
+  <!-- Accessories -->
+  <div class="cat-card-rotator">
+    <div class="cat-img-frame">
+      <img class="cat-img" data-category="access" src="access1.jpg" />
+    </div>
+    <strong>Accessories</strong>
+    <div class="muted-small">Bags, hats, belts</div>
+  </div>
+
+</div>
+
+  </section>
+
+  <!-- Contact quick block -->
+  <section id="contact" style="max-width:1080px;margin:28px auto;padding:10px 20px;">
+    <h2 style="margin:0 0 12px 0">Contact & Visit</h2>
+    <div style="display:flex;gap:18px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px;background:#fff;padding:14px;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,0.04)">
+        <strong>Visit:</strong>
+        <div class="muted-small">
+  <div class="map-block">
+  <div class="map-title">Find Us Here</div>
+  
+  <div class="map-box">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3990.899697091826!2d36.88358347425955!3d-1.3236885986788035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f04776dae9c3f%3A0xe3b6f2a9c67c1b6f!2sMukuru%20Kwa%20Reuben%20AEF%20Primary%20School!5e0!3m2!1sen!2ske!4v1709552500000"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen>
+    </iframe>
+
+    <div class="map-pin"></div>
+  </div>
+
+  <p class="map-note">Drop by the neighbourhood — fashion finds and good vibes live here.</p>
+</div>
+
+      
+        </div>
+      </div>
+      <div style="flex:1;min-width:240px;background:#fff;padding:14px;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,0.04)">
+       <!-- WhatsApp Contact Card -->
+<div class="contact-card whatsapp-card">
+  <div class="contact-header">
+    <img src="phone-call.jpg" alt="WhatsApp" class="contact-icon">
+    <h3>Chat with Us</h3>
+  </div>
+  <p>Send us a quick message — we’ll reply instantly on WhatsApp.</p>
+  
+  <div class="whatsapp-form">
+    <input type="text" id="whatsappMessage" placeholder="Type your message here..." />
+    <button id="sendWhatsApp">Send</button>
+  </div>
+</div>
+
+      </div>
+      <div style="flex:1;min-width:240px;background:#fff;padding:14px;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,0.04)">
+      <!-- Testimonial card -->
+<div class="contact-card contact-testimonial" role="region" aria-label="Client testimonials">
+  <div class="contact-head">
+    <div class="contact-title">Happy Clients</div>
+   
+  </div>
+
+  <div class="contact-body testimonial-body" id="testimonialContainer">
+    <div class="testimonial" data-index="0">
+      <img src="brain1.png" alt="Client 1" class="testimonial-img" />
+      <div class="testimonial-text">
+        <p class="testimonial-quote">“The thrift pieces looked brand new — I’ve never saved this much and still felt stylish!”</p>
+        <span class="testimonial-name">— Mercy N.</span>
+      </div>
+    </div>
+
+    <div class="testimonial" data-index="1" style="display:none;">
+      <img src="kev1.png" alt="Client 2" class="testimonial-img" />
+      <div class="testimonial-text">
+        <p class="testimonial-quote">“Fast delivery and good quality! This store completely changed how I shop second-hand.”</p>
+        <span class="testimonial-name">— Brian K.</span>
+      </div>
+    </div>
+
+    <div class="testimonial" data-index="2" style="display:none;">
+      <img src="mercy1.png" alt="Client 3" class="testimonial-img" />
+      <div class="testimonial-text">
+        <p class="testimonial-quote">“Customer service was amazing — they helped me pick the perfect outfit.”</p>
+        <span class="testimonial-name">— Janet W.</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="feedback">
+<div class="contact-badge">Feedback</div>
+<input type="text"  id="feedId" placeholder="Sent us your feedback">
+<button type="submit" id="btnn"> <img src="send.jpeg"></button>
+</div>
+ 
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+ <footer class="about-footer">
+  <div class="footer-container">
+    <div class="about-section">
+      <h3>About Thrift Haven</h3>
+      <p>Born from the streets, styled by sustainability. We bring you handpicked thrift gems that tell stories through fashion.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#trends">Latest Trends</a></li>
+        <li><a href="#new">New Arrivals</a></li>
+        <li><a href="#eco">Eco Picks</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="socials-section">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="phone-call.jpg" alt="WhatsApp"></a>
+        <a href="#"><img src="tiktok.jpeg" alt="TikTok"></a>
+         <a href="#"><img src="telegram.png" alt="Telgram"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>&copy; <span id="year"></span> Thrift Haven. All rights reserved.</p>
+  </div>
+</footer>
+
+</footer>
+<div class="to-top" id="toTop" title="Back to top" aria-hidden="false">↑</div>
+
+<script src="thrift.js"></script>
+</body>
+</html>
